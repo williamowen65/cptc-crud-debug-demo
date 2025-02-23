@@ -1,6 +1,25 @@
-﻿@*
+﻿@model List<Student>
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
 
+<nav>
+    <a asp-action="Create">Create New Student</a>
+</nav>
+
+
+<h1>List of Students</h1>
+<ul id="students">
+    @foreach (Student student in Model)
+    {
+        <li>Student</li>
+    }
+    @if (Model.Count == 0)
+    {
+        <li>There are no students in the DB</li>
+    }
+
+</ul>
