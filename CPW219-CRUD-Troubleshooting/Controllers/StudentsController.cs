@@ -42,8 +42,9 @@ namespace CPW219_CRUD_Troubleshooting.Controllers
             //get the product by id
             Student p = StudentDb.GetStudent(context, id);
 
+
             //show it on web page
-            return View();
+            return View(p);
         }
 
         [HttpPost]
