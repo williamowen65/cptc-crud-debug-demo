@@ -1,19 +1,23 @@
-﻿@*
+﻿@model Student;
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
 
 <div style="max-height: 300px;" class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+ 
     <div class="col p-4 d-flex flex-column position-static">
-        <strong class="fancy-font d-inline-block mb-2 text-primary-emphasis">World</strong>
-        <h3 class="mb-0 fancy-font">Featured post</h3>
-        <div class="mb-1 text-body-secondary">Nov 12</div>
+        <i style="position: absolute; right: 22px;" class="fa fa-pen-to-square"></i>
+        <strong class="fancy-font d-inline-block mb-2 text-primary-emphasis">CPTC Student</strong>
+        <h3 class="mb-0 fancy-font">@Model.Name</h3>
+        <div class="mb-1 text-body-secondary">@Model.DateOfBirth.ToShortDateString()</div>
         <p class="card-text mb-2">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-          
-        </a>
+        @* <a href="#" class="icon-link gap-1 "> *@
+        @*    View Student *@
+        @* </a> *@
     </div>
 
 </div>
