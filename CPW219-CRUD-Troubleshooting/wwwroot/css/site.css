@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap');
 html {
   font-size: 14px;
+ 
+}
+
+.fancy-font {
+    font-family: 'Playfair Display';
+    font-style:italic;
 }
 
 @media (min-width: 768px) {
@@ -16,3 +23,4 @@ html {
 body {
   margin-bottom: 60px;
 }
+
