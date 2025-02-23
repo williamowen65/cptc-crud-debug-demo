@@ -2,10 +2,13 @@
 {
     public static class StudentDb
     {
+
         public static Student Add(Student p, SchoolContext db)
         {
             //Add student to context
             db.Students.Add(p);
+
+            db.SaveChanges();
             return p;
         }
 
