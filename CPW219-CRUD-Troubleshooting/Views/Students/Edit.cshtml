@@ -1,8 +1,22 @@
-﻿@*
+﻿@model Student
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
-}
 
 
-Update item
+
+<form asp-action="Edit" class="mx-auto" style="max-width: 300px;">
+
+    @Html.Partial("_StudentFormComponents", Model)
+
+    <div class="form-group mt-2 d-flex justify-content-end">
+        <button class="btn btn-primary" type="submit">Update Student</button>
+
+        <a class="ms-1" asp-controller="Students" asp-action="index">
+            <button class="btn btn-secondary" type="button">Cancel</button>
+        </a>
+    </div>
+
+
+</form>

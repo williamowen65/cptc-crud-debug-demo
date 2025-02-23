@@ -10,7 +10,7 @@
 
  
     <div class="col p-4 d-flex flex-column position-static">
-        <i style="position: absolute; right: 22px;" class="fa fa-pen-to-square"></i>
+        <a asp-route-id="@Model.StudentId" asp-action="Edit" asp-controller="Students" style="cursor:pointer; position: absolute; right: 22px;" class="fa fa-pen-to-square"></a>
         <strong class="fancy-font d-inline-block mb-2 text-primary-emphasis">CPTC Student</strong>
         <h3 class="mb-0 fancy-font">@Model.Name</h3>
         <div class="mb-1 text-body-secondary">@Model.DateOfBirth.ToShortDateString()</div>
