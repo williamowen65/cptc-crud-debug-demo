@@ -1,5 +1,7 @@
 # CPW219-CRUD-Troubleshooting
 
+<img src="./crud-demo.gif" />
+
 ## Requirements
 - VS2022 + ASP.NET and Web Development workload
 - .NET 8
